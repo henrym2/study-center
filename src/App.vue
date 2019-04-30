@@ -17,9 +17,10 @@ export default {
     scratchPad,
     Toolbar
   },
-
   data: () => {
-    return {};
+    return {
+      lStorage: localStorage
+    };
   }
 };
 </script>
