@@ -20,8 +20,10 @@
 <script>
 //import MarkdownIt from "markdown-it";
 import client from "../js/client.js";
+import { storage } from "../mixins/storageWrapper.js";
 export default {
   name: "notePad",
+  mixin: [storage],
   data: () => {
     return {
       md: require("markdown-it")()
@@ -43,6 +45,9 @@ export default {
         this.client.activate(id);
         this.client.active = true;
       }
+    },
+    autoSave: () => {
+      this.addItem("note", this.text);
     }
   }
 };

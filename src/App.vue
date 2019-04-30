@@ -16,11 +16,6 @@ export default {
     notePad,
     scratchPad,
     Toolbar
-  },
-  data: () => {
-    return {
-      lStorage: localStorage
-    };
   }
 };
 </script>
@@ -34,5 +29,9 @@ export default {
   color: #2c3e50;
   flex: 1;
   height: 100%;
+}
+
+#draggable {
+  resize: vertical;
 }
 </style>

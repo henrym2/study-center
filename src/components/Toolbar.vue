@@ -1,21 +1,24 @@
 <template>
   <nav class="navbar navbar-expand navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Study-Center</a>
-    <div :onClick="save('Text')" class="btn-group" role="control" aria-label="Basic example">
-      <button type="button" class="btn btn-secondary">Save</button>
+    <div class="btn-group" role="control" aria-label="Basic example">
+      <button @click="save()" type="button" class="btn btn-secondary">Save</button>
     </div>
   </nav>
 </template>
 
 <script>
+import { storage } from "../mixins/storageWrapper.js";
 export default {
   name: "toolbar",
+  mixin: [storage],
   data: () => {
-    return {};
+    return { d: "" };
   },
   methods: {
-    save: text => {
-      localStorage.setItem("test", text);
+    save: () => {
+      //console.log(this.d);
+      localStorage.setItem("note", this.dataToStore.note);
     }
   }
 };
