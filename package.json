@@ -1,0 +1,57 @@
+{
+  "name": "study-center",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "core-js": "^2.6.5",
+    "highlight.js": "^9.15.6",
+    "interactjs": "^1.4.0-rc.13",
+    "jquery": "^3.4.0",
+    "markdown-it": "^8.4.2",
+    "markdown-it-highlightjs": "^3.0.0",
+    "markdown-it-math": "^4.1.1",
+    "markdown-it-sup": "^1.0.0",
+    "npm": "^6.9.0",
+    "popper.js": "^1.15.0",
+    "vue": "^2.6.6"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
